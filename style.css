@@ -3,117 +3,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Fundo da página */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #4A90E2, #50E3C2); /* Gradiente azul e verde */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background: linear-gradient(to right, #4A90E2, #50E3C2); /* Gradiente azul suave */
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Container principal */
 .container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
     text-align: center;
-    position: relative;
 }
 
-/* Estilizando o título */
-.title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+/* Estilo do formulário */
+form {
+    margin-top: 20px;
 }
 
-/* Contêiner da calculadora */
-.calculator {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 300px;
-}
-
-/* Display da calculadora */
-.display {
+/* Estilizando inputs, selects e botões */
+input, select, button {
+    height: 50px;
     width: 100%;
-    height: 60px;
-    text-align: right;
-    font-size: 2rem;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f5f5f5;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos dos botões */
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-/* Botão padrão */
-.btn {
-    background-color: #f4f4f4;
-    border: none;
     border-radius: 8px;
-    font-size: 1.5rem;
-    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+/* Estilo do input de texto */
+input {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilo do botão */
+button {
+    color: #fff;
+    background-color: #4CAF50; /* Verde suave */
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
 }
 
-/* Efeito hover nos botões */
-.btn:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
-}
-
-/* Botões de operação */
-.operator {
-    background-color: #ff9500;
-    color: white;
-}
-
-.operator:hover {
-    background-color: #e68500;
-}
-
-/* Botão de igual */
-.equals {
-    background-color: #4caf50;
-    color: white;
-    grid-column: span 2;
-}
-
-.equals:hover {
+/* Efeito hover no botão */
+button:hover {
     background-color: #45a049;
-}
-
-/* Botão de limpar */
-.clear {
-    width: 100%;
-    background-color: #ff3b30;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 15px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.clear:hover {
-    background-color: #e13f30;
     transform: scale(1.05);
 }
+
+/* Exibição do resultado */
+#resultado {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo dos subtítulos */
+h2 {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Histórico de conversões */
+#historico {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#historico li {
+    background: #f9f9f9;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #555;
+}
+

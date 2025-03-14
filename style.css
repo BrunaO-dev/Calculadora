@@ -96,9 +96,14 @@ body {
     color: white;
     grid-column: span 2;
 }
+.equals:hover{
+    background-color:#45a049;
+}
 
 .equals:hover {
     background-color: #45a049;
+    color: white;
+    grid-colimn: span 2;
 }
 
 /* Botão de limpar */
